@@ -53,4 +53,59 @@ DualLang aims to redefine language learning through an accessible, engaging, and
 
 
 
+# Software Requirements Specification (SRS)
+
+### Introduction
+
+1.1 Purpose
+The purpose of this document is to define the functional and non-functional requirements for Duolingo, a comprehensive language learning platform. Duolingo aims to provide an engaging, accessible, and highly effective way for users to learn new languages. It leverages gamified lessons, quizzes, community engagement, and interactive practice to create an enjoyable learning experience.
+
+
+### Requirements
+
+3.1.1 User Registration and Authentication
+FR1: Users must be able to register using email, Google, Facebook, or Apple accounts.
+FR2: Support for multi-factor authentication (MFA) for enhanced security.
+FR3: Users can modify their profile, including learning goals, preferred language, and difficulty level.
+3.1.2 Language Learning Lessons
+FR4: Lessons are categorized into beginner, intermediate, and advanced levels.
+FR5: Lessons will include grammar, vocabulary, listening, reading, writing, and speaking exercises.
+FR6: Interactive quizzes (multiple choice, fill-in-the-blank, matching) are provided to test comprehension.
+FR7: Personalized lesson paths adjust based on user performance and weaknesses.
+3.1.3 Gamification Elements
+FR8: Users earn XP for completing lessons, with additional rewards for streaks and milestones.
+FR9: Badges are awarded for specific achievements such as completing levels, maintaining streaks, or perfect scores.
+FR10: Leaderboards allow users to compete globally or within a friend group.
+3.1.4 Speech Recognition and Pronunciation Practice
+FR11: Integrated speech recognition allows users to practice speaking and receive feedback on pronunciation.
+FR12: Users can practice role-play conversations, taking on one side of a dialogue.
+3.1.5 Community Features
+FR13: Users can participate in group challenges and forums to discuss language learning topics.
+FR14: Friends can be added to compare progress and motivate each other through shared goals.
+FR15: Teachers can create classroom groups to assign lessons and track student progress.
+3.1.6 Notifications and Reminders
+FR16: Users will receive daily reminders to complete lessons and maintain streaks.
+FR17: Customizable notifications for new lesson availability, progress milestones, and challenges.
+3.1.7 Payment and Subscription Management
+FR18: Users can subscribe to premium (Super Duolingo) to unlock advanced features, such as offline mode and an ad-free experience.
+FR19: Multiple payment methods (credit card, PayPal, in-app purchase) are available for subscription.
+3.2 Non-functional Requirements
+3.2.1 Performance Requirements
+NFR1: Lessons should load within 2 seconds under stable internet conditions.
+NFR2: The app should be responsive across different devices and screen sizes, with no significant performance degradation.
+3.2.2 Security Requirements
+NFR3: User data, including personal information, progress, and subscription details, must be securely stored and encrypted.
+NFR4: All data transfers between clients and servers must use SSL/TLS for encryption.
+NFR5: Regular security updates and vulnerability assessments must be performed to ensure data safety.
+3.2.3 Usability Requirements
+NFR6: The application must have a user-friendly and intuitive interface, ensuring smooth navigation across different learning levels.
+NFR7: The app interface should be available in multiple languages to accommodate users worldwide.
+3.2.4 Scalability Requirements
+NFR8: The app must be scalable to support millions of users concurrently without major performance issues.
+NFR9: The backend system should support autoscaling to handle peak times, particularly during promotional events or learning challenges.
+3.2.5 Reliability and Availability Requirements
+NFR10: The app should be available 99.9% of the time, with minimal scheduled downtime for maintenance.
+NFR11: User progress data must be saved in real-time to prevent data loss in case of unexpected shutdowns.
+
+
 

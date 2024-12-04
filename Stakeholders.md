@@ -1,7 +1,7 @@
 # Stakeholders
 
 ## Overview
-This document outlines the key stakeholders involved in the Uber clone project. Stakeholders include all individuals, groups, and organizations that are affected by the project or have an interest in its success.
+This document outlines the key stakeholders involved in the Byjus clone project. Stakeholders include all individuals, groups, and organizations that are affected by the project or have an interest in its success.
 
 ## Internal Stakeholders
 These stakeholders are directly involved in the planning, execution, and delivery of the project.
@@ -17,11 +17,4 @@ These stakeholders are directly involved in the planning, execution, and deliver
 | Customer Support Team           | Provides support to users with issues                                | Handling inquiries and complaints; Providing solutions or escalating issues                                     | Medium - Effectiveness influences user satisfaction and retention             | Strong communication skills; experience in customer service       |
 | Marketing Team                  | Promotes the app to attract users and drivers                        | Developing and executing campaigns; Managing social media; Analyzing market trends                              | Medium - Efforts impact visibility and user acquisition                      | Background in digital marketing; skilled in campaign management and analytics |
 
-## External Stakeholders
-These stakeholders are indirectly involved or affected by the outcomes of the project but not directly participating in its execution.
 
-| Key Stakeholders                | Role                                                                  | Responsibilities                                                                                                | Impact                                                                       | Qualifications                                                     |
-|---------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| Drivers                         | Individuals driving for the app                                       | Providing feedback on usability and functionality                                                              | High - Satisfaction determines success and adoption                          | Basic familiarity with app usage; diverse backgrounds for thorough feedback |
-| Riders                          | Individuals booking rides through the app                             | Providing feedback on usability and functionality                                                              | High - Satisfaction determines success and adoption                          | Basic familiarity with app usage; diverse backgrounds for thorough feedback |
-| Legal and Compliance Team       | Ensures adherence to legal standards and regulations                  | Ensuring app complies with laws; Mitigating legal risks; Overseeing contracts                                   | Medium - Ensures the app operates within legal guidelines                    | Knowledge of relevant laws and regulations; experience in tech industry compliance |

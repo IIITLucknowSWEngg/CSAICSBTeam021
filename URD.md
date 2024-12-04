@@ -15,7 +15,7 @@ LMS: Learning Management System.
 AI: Artificial Intelligence.
 ### 1.4 References
 
-[Stakeholders.md](https://github.com/IIITLucknowSWEngg/CSAICSBTeam021/edit/main/Stakeholders.md)
+[Stakeholders.md](https://github.com/IIITLucknowSWEngg/CSAICSBTeam021/edit/main/Stakeholders.md).
 [E-LearningProject.md](https://github.com/IIITLucknowSWEngg/CSAICSBTeam021/edit/main/Project.md)
 
 ## 2. User Characteristics

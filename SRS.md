@@ -214,3 +214,341 @@ The application will support localization to enable use in different regions wit
 The system will include features to prevent misuse, such as content moderation and reporting mechanisms for inappropriate behavior by educators or students.
 
 ---
+
+# Use-Case Diagram for Byju's Clone
+
+The following diagram represents the primary use cases and interactions in the Byju's Clone application. The main actors (Students, Educators, and Admins) interact with various use cases to perform their roles in the system.
+
+## Actors
+
+1. **Student**: A user who uses the app to access educational content, track their progress, and engage in learning activities.
+2. **Educator**: A user who creates and manages courses, conducts live classes, and evaluates student performance.
+3. **Admin**: A user who manages the overall platform, including users, courses, and system performance.
+
+---
+
+## Use Cases
+
+### 1. **Student Use Cases**
+- **Register and Authenticate**: The student registers on the platform using their email, phone number, or social accounts. They can log in and recover their password.
+- **Browse and Enroll in Courses**: The student can browse available courses, search for specific subjects, and enroll in the courses of their choice.
+- **Watch Video Lessons**: The student watches pre-recorded video lessons as part of the course content.
+- **Attend Live Classes**: The student can attend live classes conducted by educators for real-time learning.
+- **Take Quizzes**: The student can take quizzes related to the courses they have enrolled in to assess their understanding.
+- **View Progress**: The student can track their progress in terms of completed lessons, quiz scores, and course milestones.
+- **Make Payments**: The student can make payments for the courses they have enrolled in using different payment methods.
+
+### 2. **Educator Use Cases**
+- **Register and Authenticate**: The educator registers and logs into the platform, with the option to reset their password if necessary.
+- **Create and Manage Courses**: The educator creates new courses, adds video lessons, quizzes, and other materials, and manages existing courses.
+- **Host Live Classes**: The educator can set up and conduct live classes for students.
+- **Create and Grade Quizzes**: The educator designs quizzes for students, grades them, and provides feedback based on their performance.
+- **Monitor Student Progress**: The educator can view the performance of students in their courses, including quiz results, participation in live classes, and overall progress.
+
+### 3. **Admin Use Cases**
+- **Manage Users**: The admin manages student and educator accounts, including registration, profile updates, and user status (active/inactive).
+- **Manage Courses**: The admin oversees the courses available on the platform, approving or rejecting courses created by educators.
+- **Monitor System Performance**: The admin tracks the overall health of the platform, including performance metrics, user activity, and system load.
+- **Generate Reports**: The admin generates various reports related to user activity, course enrollments, payment history, and system performance.
+
+### Relationships Between Use Cases
+
+- **Includes**: 
+  - "Register and Authenticate" includes "Browse and Enroll in Courses", "Watch Video Lessons", and "Take Quizzes" as they require authentication to access content.
+  - "Watch Video Lessons" includes "Attend Live Classes" as both are part of the student’s learning journey.
+  - "Take Quizzes" includes "View Progress", as quizzes are an integral part of tracking student progress.
+
+- **Extends**: 
+  - "Attend Live Classes" extends "Watch Video Lessons" because live classes are an optional form of content delivery that supplements video lessons.
+
+## Use Case Diagram Summary
+
+- **Students** primarily interact with features that help them access educational content, track progress, and pay for courses.
+- **Educators** focus on course creation, content management, and student assessment.
+- **Admins** have administrative control over user management, course oversight, and system health monitoring.
+
+<img width="1512" alt="Screenshot 2024-12-04 at 7 04 03 PM" src="https://github.com/user-attachments/assets/b22defa5-c4c5-4a14-aa11-5ae7e46790f5">
+
+```
+const useCaseDiagram = `
+@startuml
+actor Student
+actor Educator
+actor Admin
+
+Student -> (Register and Authenticate)
+Student -> (Browse and Enroll in Courses)
+Student -> (Watch Video Lessons)
+Student -> (Attend Live Classes)
+Student -> (Take Quizzes)
+Student -> (View Progress)
+Student -> (Make Payments)
+
+Educator -> (Register and Authenticate)
+Educator -> (Create and Manage Courses)
+Educator -> (Host Live Classes)
+Educator -> (Create and Grade Quizzes)
+Educator -> (Monitor Student Progress)
+
+Admin -> (Manage Users)
+Admin -> (Manage Courses)
+Admin -> (Monitor System Performance)
+Admin -> (Generate Reports)
+
+(Register and Authenticate) --> (Browse and Enroll in Courses)
+(Register and Authenticate) --> (Watch Video Lessons)
+(Register and Authenticate) --> (Take Quizzes)
+
+(Watch Video Lessons) --> (Attend Live Classes)
+(Take Quizzes) --> (View Progress)
+
+@enduml
+`;
+
+describe('Use-Case Diagram for Byju\'s Clone', function() {
+  it('should generate use case diagram code', function() {
+    const expectedUseCaseDiagram = `
+@startuml
+actor Student
+actor Educator
+actor Admin
+
+Student -> (Register and Authenticate)
+Student -> (Browse and Enroll in Courses)
+Student -> (Watch Video Lessons)
+Student -> (Attend Live Classes)
+Student -> (Take Quizzes)
+Student -> (View Progress)
+Student -> (Make Payments)
+
+Educator -> (Register and Authenticate)
+Educator -> (Create and Manage Courses)
+Educator -> (Host Live Classes)
+Educator -> (Create and Grade Quizzes)
+Educator -> (Monitor Student Progress)
+
+Admin -> (Manage Users)
+Admin -> (Manage Courses)
+Admin -> (Monitor System Performance)
+Admin -> (Generate Reports)
+
+(Register and Authenticate) --> (Browse and Enroll in Courses)
+(Register and Authenticate) --> (Watch 
+```
+
+---
+
+# Error Case Diagram for Byju's Clone
+
+The following error case diagram describes potential error scenarios and interactions in the Byju's Clone application. These error cases represent situations where a user’s action or the system's behavior leads to an error. The system is designed to handle these errors and provide appropriate feedback to users.
+
+## Actors
+
+1. **Student**: A user who encounters various error cases when interacting with the platform, such as during registration, login, course enrollment, or payments.
+2. **Educator**: A user who may also encounter error cases related to course creation, managing content, or interacting with students.
+3. **Admin**: A user who may experience error cases related to user management or system performance.
+
+## Error Cases
+
+### 1. **Student Error Cases**
+
+- **Invalid Registration Details**
+    - **Description**: The student enters incorrect or incomplete details during registration (e.g., invalid email, weak password).
+    - **Error Message**: "Invalid email format" or "Password must be at least 8 characters long."
+    - **Resolution**: Prompt the user to correct the input and submit again.
+
+- **Failed Login Attempt**
+    - **Description**: The student enters incorrect login credentials (wrong email or password).
+    - **Error Message**: "Invalid username or password. Please try again."
+    - **Resolution**: Allow the student to retry with the correct credentials or reset the password.
+
+- **Course Enrollment Failure**
+    - **Description**: The student attempts to enroll in a course that is no longer available or full.
+    - **Error Message**: "This course is no longer available or is at full capacity."
+    - **Resolution**: Provide an option to view similar courses or join a waitlist.
+
+- **Payment Failure**
+    - **Description**: The student’s payment is unsuccessful due to network issues, invalid payment method, or insufficient funds.
+    - **Error Message**: "Payment could not be processed. Please check your payment details or try again later."
+    - **Resolution**: Suggest the student to verify payment details or try using a different payment method.
+
+### 2. **Educator Error Cases**
+
+- **Course Creation Failure**
+    - **Description**: The educator attempts to create a course but misses required fields like course title or description.
+    - **Error Message**: "Please fill in all required fields."
+    - **Resolution**: Prompt the educator to complete the missing details and submit again.
+
+- **Live Class Scheduling Conflict**
+    - **Description**: The educator tries to schedule a live class at the same time as another class or when no available slots exist.
+    - **Error Message**: "The selected time slot is unavailable. Please choose another time."
+    - **Resolution**: Provide available time slots for scheduling.
+
+- **Failed Quiz Submission**
+    - **Description**: The educator tries to submit a quiz with missing questions or incomplete settings.
+    - **Error Message**: "Please ensure all questions are completed before submitting."
+    - **Resolution**: Prompt the educator to fill in missing information.
+
+### 3. **Admin Error Cases**
+
+- **User Account Management Failure**
+    - **Description**: The admin tries to deactivate or delete a user account, but the operation fails due to system errors.
+    - **Error Message**: "An error occurred while deactivating or deleting the account. Please try again."
+    - **Resolution**: Provide an option to retry or contact support for assistance.
+
+- **Course Approval Failure**
+    - **Description**: The admin attempts to approve a course but the system cannot process due to validation issues or a missing course file.
+    - **Error Message**: "Course approval failed. Please check the course details."
+    - **Resolution**: Prompt the admin to review course details or contact the educator for missing information.
+
+- **Report Generation Failure**
+    - **Description**: The admin tries to generate a report, but the system fails due to data inconsistency or network issues.
+    - **Error Message**: "Report generation failed due to an error. Please try again later."
+    - **Resolution**: Suggest the admin retry or use a different report format.
+
+## Error Handling Strategy
+
+- **System Feedback**: The application provides clear and concise error messages to guide the users in resolving issues.
+- **Retry Mechanism**: For critical actions like payments or registration, users are given options to retry the operation.
+- **Support Integration**: In cases of persistent errors, users can access customer support directly through the application for resolution.
+
+## Error Case Diagram Summary
+
+- **Students** encounter errors related to registration, login, course enrollment, and payment.
+- **Educators** face errors when creating or managing courses, scheduling live classes, or grading quizzes.
+- **Admins** handle system-level errors related to user management, course approval, and report generation.
+
+  
+<img width="1512" alt="Screenshot 2024-12-04 at 7 15 03 PM" src="https://github.com/user-attachments/assets/7a241f66-207b-4a9f-9f19-2aac4d2268f1">
+
+```
+@startuml
+
+actor Student
+actor Educator
+actor Admin
+
+Student --> (Login Error)
+Student --> (Payment Failure)
+Student --> (Video Streaming Failure)
+
+Educator --> (Course Upload Failure)
+Educator --> (Live Class Connection Failure)
+Educator --> (Quiz Creation Error)
+
+Admin --> (User Deletion Failure)
+Admin --> (Database Connection Error)
+
+(Login Error) ..> (Register and Authenticate) : includes
+(Payment Failure) ..> (Make Payments) : includes
+(Video Streaming Failure) ..> (Watch Video Lessons) : includes
+
+@enduml
+```
+
+---
+
+# Abuse Case Diagram for Byju's Clone
+
+The following abuse case diagram describes potential abusive scenarios and interactions within the Byju's Clone application. These abuse cases represent malicious or harmful behaviors from users that could affect the system's integrity, user experience, or platform safety. The system is designed to handle and prevent these abuse cases through preventive measures and reporting mechanisms.
+
+## Actors
+
+1. **Student**: A user who may engage in abusive behavior such as cheating, harassment, or spamming, affecting other users or the system.
+2. **Educator**: A user who might engage in harmful activities like sharing inappropriate content, exploiting students, or abusing their privileges.
+3. **Admin**: A user responsible for managing and addressing abuse cases, monitoring the platform, and enforcing rules.
+
+## Abuse Cases
+
+### 1. **Student Abuse Cases**
+
+- **Cheating During Quizzes**
+    - **Description**: A student attempts to cheat during a quiz by using unauthorized resources or collaborating with others.
+    - **Preventive Measures**: Randomized quiz questions, time limits, and browser lockdowns to prevent cheating.
+    - **Resolution**: The system detects unusual behavior and flags the student for manual review. Repeated offenses may result in account suspension or banning.
+    
+- **Harassing Other Students or Educators**
+    - **Description**: A student engages in harassment by sending inappropriate messages, threats, or offensive comments to other students or educators.
+    - **Preventive Measures**: Reporting mechanisms, keyword filters for abusive language, and user behavior monitoring.
+    - **Resolution**: The system notifies the admin of the reported abuse, and the user’s actions are reviewed. Appropriate action is taken (e.g., warning, suspension, or banning).
+
+- **Spamming the Discussion Forums**
+    - **Description**: A student floods discussion forums with irrelevant or promotional content, disrupting the learning environment.
+    - **Preventive Measures**: Limit the number of posts per student in a set time period and implement a flagging system for suspicious posts.
+    - **Resolution**: Admin receives a report of spam activity. The student may be issued a warning or temporarily suspended from participating in forums.
+
+### 2. **Educator Abuse Cases**
+
+- **Sharing Inappropriate Content**
+    - **Description**: An educator uploads content that is offensive, irrelevant, or violates platform policies (e.g., offensive language, inappropriate images, or videos).
+    - **Preventive Measures**: Content moderation, manual review of new courses, and flagged content by students or other educators.
+    - **Resolution**: The content is flagged for review. If the educator is found violating platform policies, the content is removed, and the educator may be penalized (e.g., course removal, account suspension, or banning).
+
+- **Exploiting Students for Personal Gain**
+    - **Description**: An educator encourages or pressures students to purchase personal products, services, or external services unrelated to the platform.
+    - **Preventive Measures**: Monitoring and flagging communications between educators and students for inappropriate behavior or marketing.
+    - **Resolution**: If the educator is found exploiting students, their account is suspended, and they may face a ban from the platform.
+
+- **Manipulating Course Reviews**
+    - **Description**: An educator submits fake reviews or pressures students to leave positive reviews to artificially inflate the course ratings.
+    - **Preventive Measures**: Review authenticity checks, flagging suspicious review patterns, and requiring user verification for reviews.
+    - **Resolution**: The educator’s account is flagged, and the reviews are reviewed for authenticity. If the behavior is confirmed, the educator faces penalties, including course removal and account suspension.
+
+### 3. **Admin Abuse Cases**
+
+- **Misuse of Admin Privileges**
+    - **Description**: The admin accesses or modifies user data without authorization or uses admin privileges for personal gain.
+    - **Preventive Measures**: Role-based access controls, audit trails for admin actions, and limiting access to sensitive data.
+    - **Resolution**: If abuse is detected, the admin’s access is revoked, and the incident is reported to the higher authorities. Legal action may be taken depending on the severity.
+
+- **Ignoring Abuse Reports**
+    - **Description**: An admin ignores reported abuse cases or fails to take appropriate action against abusive users, which can lead to further harm.
+    - **Preventive Measures**: Set clear response timelines for abuse reports and an automated escalation process if the admin fails to act within a set period.
+    - **Resolution**: If the admin consistently ignores reports, their actions are reviewed, and they may be removed from their role. The incident is escalated to a higher-level admin or governance board.
+
+## Abuse Handling Strategy
+
+- **Automated Detection**: The system incorporates various automated tools to detect and flag abusive behavior, such as cheating, harassment, or spamming.
+- **Reporting Mechanism**: Users can report abuse cases via built-in reporting features in the application. Each abuse case is reviewed by an admin or moderator.
+- **Manual Review**: Suspected abuse cases are escalated for manual review by admins. A thorough investigation is conducted before any actions are taken.
+- **Suspension and Banning**: Users who violate platform policies are subject to warnings, account suspension, or permanent bans, depending on the severity of the abuse.
+
+## Abuse Case Diagram Summary
+
+- **Students** may abuse the system by cheating, harassing other users, or spamming discussion forums.
+- **Educators** can engage in inappropriate behaviors such as sharing offensive content, exploiting students, or manipulating course reviews.
+- **Admins** can abuse their privileges by mishandling user data or ignoring abuse reports.
+  
+![Uploading Screenshot 2024-12-04 at 7.20.21 PM.png…]()
+
+```
+@startuml
+
+actor MaliciousStudent
+actor MaliciousEducator
+actor MaliciousAdmin
+
+MaliciousStudent --> (Fake Enrollment)
+MaliciousStudent --> (Manipulate Quiz Results)
+MaliciousStudent --> (Access Unauthorized Courses)
+
+MaliciousEducator --> (Upload Inappropriate Content)
+MaliciousEducator --> (Manipulate Student Results)
+MaliciousEducator --> (Create Fake Courses)
+
+MaliciousAdmin --> (Delete User Accounts)
+MaliciousAdmin --> (Access Private User Data)
+
+(Fake Enrollment) ..> (Make Payments) : includes
+(Upload Inappropriate Content) ..> (Create and Manage Courses) : includes
+
+@enduml
+
+
+```
+
+---
+
+
+
+

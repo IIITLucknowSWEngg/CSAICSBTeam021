@@ -3,7 +3,7 @@ CSAICSBTeam021
 
 TEAM NAME:   TECHNO TRIBE
 
-TEAM IDEA: Learning Platform
+TEAM IDEA: BYJUS.COM COMPETITOR
 
 TEAM MEMBERS:
 
@@ -15,7 +15,7 @@ MOHD KAIF kaifx11 mohdkaifx78@gmail.com LCI2023035
 
 VIVEK RATHORE vivekrathore  rathorevivek296@gmail.com LCI2023045
 
-SHANTAPPA  shantappa-hulsure lcb2023001@iiitl.ac.in LCB2023001
+SHANTAPPA  shantappa-hulsure shantappahulsure@gmail.com LCB2023001
 
 ADITYA SINGH adityasingh2315 lci2023003@iiitl.ac.in LCI2023003
 

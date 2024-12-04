@@ -187,7 +187,9 @@ Students can rate and review courses and educators based on their experience.
 - Regular security audits shall be conducted to ensure system integrity.
 
 ### 5.3 Availability and Reliability
-- The system must have an uptime of 99.9%, excluding scheduled maintenance.
+- The system must have an uptime of 99.7%, excluding scheduled maintenance.
+  <img width="809" alt="Screenshot 2024-12-04 at 7 31 31 PM" src="https://github.com/user-attachments/assets/cdd2e89e-ead6-47ec-abf0-ab1b193df3c5">
+
 - The system must handle up to 50,000 concurrent users without performance degradation.
 - Data backups shall be taken every 24 hours to ensure data recovery.
 

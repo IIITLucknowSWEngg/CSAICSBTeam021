@@ -1,6 +1,6 @@
 User Requirements Document (URD)
 
-## 1. Introduction
+# 1. Introduction
 1.1 Purpose
 This document outlines the user requirements for the Byju's clone application. It is intended to guide the design, development, and testing of the application to ensure that it meets the needs of its users, including students, educators, and administrators.
 

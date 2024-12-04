@@ -519,7 +519,7 @@ The following abuse case diagram describes potential abusive scenarios and inter
 - **Educators** can engage in inappropriate behaviors such as sharing offensive content, exploiting students, or manipulating course reviews.
 - **Admins** can abuse their privileges by mishandling user data or ignoring abuse reports.
   
-![Uploading Screenshot 2024-12-04 at 7.20.21 PM.png…]()
+<img width="1512" alt="Screenshot 2024-12-04 at 7 24 30 PM" src="https://github.com/user-attachments/assets/997a48ca-0cff-42e2-9e36-a35a01228862">
 
 ```
 @startuml

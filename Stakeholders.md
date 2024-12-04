@@ -17,4 +17,17 @@ These stakeholders are directly involved in the planning, execution, and deliver
 | Customer Support Team           | Provides support to users with issues                                | Handling inquiries and complaints; Providing solutions or escalating issues                                     | Medium - Effectiveness influences user satisfaction and retention             | Strong communication skills; experience in customer service       |
 | Marketing Team                  | Promotes the app to attract users and drivers                        | Developing and executing campaigns; Managing social media; Analyzing market trends                              | Medium - Efforts impact visibility and user acquisition                      | Background in digital marketing; skilled in campaign management and analytics |
 
+# External Stakeholders
+
+External stakeholders are those not directly involved in the execution of the project but have a vested interest in its outcome.
+
+| **Key Stakeholders**     | **Role**                                    | **Responsibilities**                                                      | **Impact**                                  | **Qualifications**                                |
+|---------------------------|---------------------------------------------|----------------------------------------------------------------------------|---------------------------------------------|---------------------------------------------------|
+| End-Users                | Primary consumers of the product            | Using the app; Providing feedback; Influencing product iterations          | High - Direct feedback shapes future updates | None required; experience depends on app usability |
+| Investors                | Provide financial backing                   | Funding the project; Monitoring ROI; Offering strategic guidance           | High - Influence on long-term sustainability | Strong financial background; interest in EdTech    |
+| Educational Institutions | Collaborate to provide content or access    | Licensing content; Partnering for features or marketing campaigns          | Medium - Partnerships expand reach           | Expertise in curriculum design or pedagogy         |
+| Regulatory Authorities   | Ensure compliance with laws and standards   | Setting regulations; Conducting audits; Approving necessary certifications | Medium - Non-compliance can delay or halt    | Knowledge of legal frameworks in education/technology |
+| Content Providers        | Provide educational material and resources  | Supplying multimedia, e-books, or course materials                         | High - Quality impacts app's value           | Subject matter expertise; rights to educational content |
+| Partners and Sponsors    | Collaborate for mutual growth               | Joint promotions; Providing complimentary services                         | Medium - Partnerships enhance scalability    | Expertise in relevant industries; strategic alignment |
+| Competitors              | Indirect stakeholders influencing strategy  | Acting as market benchmarks; Driving innovation through competition        | Low - Influence on differentiation strategy  | Established presence in the EdTech market          |
 

@@ -51,6 +51,9 @@ The **Byju's Clone System** is an **online learning platform** that enables:
 - **Notification Service**: SMS and email alerts for reminders, payments, and updates.
 
 ### 3.3 Databases
+ **The Byju's Clone system uses a NoSQL database (e.g., MongoDB). Below is the database schema for major entities**.
+ 
+![Byjus_Clone_Database_Schema (1)](https://github.com/user-attachments/assets/f0727cc8-f3f6-421a-b655-dd9f2290d2b2)
 - **PostgreSQL**: For structured data like user profiles, courses, and payments.  
 - **Redis**: For caching real-time data like class schedules.
 

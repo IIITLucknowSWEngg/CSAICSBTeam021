@@ -4,6 +4,10 @@
 ## **1. Context Diagram**
 <img src="https://github.com/user-attachments/assets/d574dbbd-7933-4029-b640-e7bfbdd77d09" alt="Context Diagram" width="900">
 
+
+<img src="https://github.com/user-attachments/assets/b9f4da34-b84f-43e3-9bbe-3d8125fdf7b3" alt="Context Diagram" width="1000">
+
+
 **Core Logic:**
 - Shows the **high-level interaction** between users and the Byju's clone platform.
 - Depicts **three primary users**: Students, Teachers, and Admins.

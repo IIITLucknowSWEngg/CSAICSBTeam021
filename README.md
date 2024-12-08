@@ -27,8 +27,4 @@ ABHAY SAHU abhay6758 lci2023055@iiitl.ac.in LCI2023055
 
 
 
-e 99.9% of the time, with minimal scheduled downtime for maintenance.
-NFR11: User progress data must be saved in real-time to prevent data loss in case of unexpected shutdowns.
-
-
 

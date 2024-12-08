@@ -15,6 +15,23 @@
 - Focuses on the **data flow and communication** between users and the system.
 - Represents how different user roles interact with the platform for **registration, accessing content, or managing features**.
 
+
+## **4. Container Diagram**
+<img src="https://github.com/user-attachments/assets/b98d3217-d9ab-4d29-bfd7-55f76f365f00"
+alt="Container Diagram" width="900">
+
+
+**Core Logic:**
+- Breaks down the system into **major containers**:
+  - **Web App**: For accessing the platform on desktop browsers.
+  - **Mobile App**: For accessing the platform on Android/iOS devices.
+  - **Backend Services**: Handles API requests and processes business logic.
+  - **Database**: Stores user data, content, and analytics.
+- Depicts the **interaction between containers** using arrows.
+- The **frontend (web and mobile)** interacts with the backend API.
+- Backend integrates with the database and external services.
+- Provides a clear understanding of **modular interactions** within the Byju's clone system.
+
 ---
 
 ## **2. Component Diagram**
@@ -43,19 +60,7 @@
 
 ---
 
-## **4. Container Diagram**
-<img src="https://github.com/user-attachments/assets/b72a986c-7558-4aa8-96e1-e6b5623874bb" alt="Container Diagram" width="900">
 
-**Core Logic:**
-- Breaks down the system into **major containers**:
-  - **Web App**: For accessing the platform on desktop browsers.
-  - **Mobile App**: For accessing the platform on Android/iOS devices.
-  - **Backend Services**: Handles API requests and processes business logic.
-  - **Database**: Stores user data, content, and analytics.
-- Depicts the **interaction between containers** using arrows.
-- The **frontend (web and mobile)** interacts with the backend API.
-- Backend integrates with the database and external services.
-- Provides a clear understanding of **modular interactions** within the Byju's clone system.
 
 ---
 

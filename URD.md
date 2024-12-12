@@ -133,4 +133,4 @@ The app must meet all functional and non-functional requirements.
 Issues raised during beta testing must be resolved before release.
 The app must adhere to educational and regulatory standards.
 ## 7. Conclusion
-This document defines the user requirements for the Byju's clone application. It provides a detailed roadmap to ensure the app addresses user needs and achieves project objectives effectively.
+This document defines the user requirements for the Byju's competitor application. It provides a detailed roadmap to ensure the app addresses user needs and achieves project objectives effectively.

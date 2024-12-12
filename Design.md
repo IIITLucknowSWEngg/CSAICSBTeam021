@@ -3,10 +3,10 @@
 ## 1. Introduction
 
 ### 1.1 Purpose
-The purpose of this **Software Design Description (SDD)** is to provide a detailed design for the **Byju's clone system**, covering architecture, components, and interactions.
+The purpose of this **Software Design Description (SDD)** is to provide a detailed design for the **Byju's Competitor system**, covering architecture, components, and interactions.
 
 ### 1.2 Scope
-The **Byju's Clone System** is an **online learning platform** that enables:
+The **Byju's Competitor System** is an **online learning platform** that enables:
 - **Students**: Access courses, join live classes, and track progress.
 - **Tutors**: Upload content, schedule live classes, and manage Q&A.
 - **Admins**: Manage users, content, and platform analytics.

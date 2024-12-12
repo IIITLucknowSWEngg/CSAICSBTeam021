@@ -75,12 +75,6 @@ Must access metrics for course engagement and student performance analytics.
 Students and Educators:
 Must communicate through in-app chat or forums.
 Must receive notifications for messages and updates.
-### 3.7 AI-Based Recommendations
-
-Students:
-Must receive personalized course recommendations and study plans based on preferences.
-Educators:
-Must receive suggestions to improve course content and student engagement.
 ### 3.8 Customer Support
 
 Students and Educators:

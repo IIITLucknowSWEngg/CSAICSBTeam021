@@ -4,7 +4,7 @@
 This document outlines the user requirements for the Byju's competitor application. It is intended to guide the design, development, and testing of the application to ensure that it meets the needs of its users, including students, educators, and administrators.
 
 ### 1.2 Scope
-The Byju's clone will be an e-learning mobile and web application. The app will support course enrollment, video-based learning, live classes, quizzes, progress tracking, personalized study plans, and communication between students and educators.
+The Byju's competitor will be an e-learning mobile and web application. The app will support course enrollment, video-based learning, live classes, quizzes, progress tracking, personalized study plans, and communication between students and educators.
 
 ### 1.3 Definitions, Acronyms, and Abbreviations
 

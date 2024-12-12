@@ -1,12 +1,12 @@
-# Software Requirements Specification (SRS) for Byju's Clone
+# Software Requirements Specification (SRS) for Byju's competitor 
 
 ## 1. Introduction
 
 ### 1.1 Purpose
-This Software Requirements Specification (SRS) document provides a detailed description of the functional and non-functional requirements for the Byju's Clone application. The document serves as a guideline for developers, testers, and stakeholders throughout the software development lifecycle, ensuring the application meets the expectations and goals defined for the project.
+This Software Requirements Specification (SRS) document provides a detailed description of the functional and non-functional requirements for the Byju's competitor  application. The document serves as a guideline for developers, testers, and stakeholders throughout the software development lifecycle, ensuring the application meets the expectations and goals defined for the project.
 
 ### 1.2 Scope
-The Byju’s Clone application is an e-learning platform designed to offer a seamless learning experience through video-based lessons, live classes, quizzes, and progress tracking. The platform will serve students, educators, and administrators. It will allow students to enroll in courses, track progress, attend live classes, and participate in quizzes. Educators will have tools to upload content, create live sessions, and monitor student engagement. Admins will manage user accounts, courses, and the system’s overall functionality. This SRS defines the features and constraints of the application.
+The Byju’s Competitor  application is an e-learning platform designed to offer a seamless learning experience through video-based lessons, live classes, quizzes, and progress tracking. The platform will serve students, educators, and administrators. It will allow students to enroll in courses, track progress, attend live classes, and participate in quizzes. Educators will have tools to upload content, create live sessions, and monitor student engagement. Admins will manage user accounts, courses, and the system’s overall functionality. This SRS defines the features and constraints of the application.
 
 This document covers:
 - User interfaces
@@ -47,7 +47,7 @@ This document is organized into the following sections:
 ## 2. Overall Description
 
 ### 2.1 Product Perspective
-The Byju's Clone application is designed to be a standalone platform that operates across both mobile and web devices. The application will interface with third-party services for payment processing, video hosting, and live class streaming. The system will be designed with modular architecture to support scalability and ease of maintenance. The backend will be hosted on cloud servers to ensure high availability.
+The Byju's Competitor  application is designed to be a standalone platform that operates across both mobile and web devices. The application will interface with third-party services for payment processing, video hosting, and live class streaming. The system will be designed with modular architecture to support scalability and ease of maintenance. The backend will be hosted on cloud servers to ensure high availability.
 
 ### 2.2 Product Functions
 The application will provide the following functions:
@@ -61,13 +61,13 @@ The application will provide the following functions:
 - Personalized recommendations powered by AI
 
 ### 2.3 User Classes and Characteristics
-The Byju’s Clone application will support the following user roles:
+The Byju’s Competitor  application will support the following user roles:
 - **Students**: Individuals who use the platform to access educational content and track their learning progress.
 - **Educators**: Teachers or instructors who create and manage courses, quizzes, and live classes.
 - **Admins**: Users who oversee the entire system, manage courses, users, and monitor system performance.
 
 ### 2.4 Operating Environment
-The Byju’s Clone application will operate on Android and iOS mobile platforms as well as web browsers. The system will require an active internet connection for video streaming, live sessions, payment processing, and real-time updates. The backend will be hosted on cloud infrastructure (e.g., AWS, Google Cloud) to provide scalability and high availability.
+The Byju’s Competitor  application will operate on Android and iOS mobile platforms as well as web browsers. The system will require an active internet connection for video streaming, live sessions, payment processing, and real-time updates. The backend will be hosted on cloud infrastructure (e.g., AWS, Google Cloud) to provide scalability and high availability.
 
 ### 2.5 Design and Implementation Constraints
 - The system must comply with data protection regulations, including **GDPR**.

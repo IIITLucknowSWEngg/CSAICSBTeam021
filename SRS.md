@@ -217,9 +217,9 @@ The system will include features to prevent misuse, such as content moderation a
 
 ---
 
-# Use-Case Diagram for Byju's Clone
+# Use-Case Diagram for Byju's Competitor
 
-The following diagram represents the primary use cases and interactions in the Byju's Clone application. The main actors (Students, Educators, and Admins) interact with various use cases to perform their roles in the system.
+The following diagram represents the primary use cases and interactions in the Byju's Competitor application. The main actors (Students, Educators, and Admins) interact with various use cases to perform their roles in the system.
 
 ## Actors
 
@@ -307,7 +307,7 @@ Admin -> (Generate Reports)
 @enduml
 `;
 
-describe('Use-Case Diagram for Byju\'s Clone', function() {
+describe('Use-Case Diagram for Byju\'s Competitor', function() {
   it('should generate use case diagram code', function() {
     const expectedUseCaseDiagram = `
 @startuml
@@ -340,9 +340,9 @@ Admin -> (Generate Reports)
 
 ---
 
-# Error Case Diagram for Byju's Clone
+# Error Case Diagram for Byju's Competitor
 
-The following error case diagram describes potential error scenarios and interactions in the Byju's Clone application. These error cases represent situations where a user’s action or the system's behavior leads to an error. The system is designed to handle these errors and provide appropriate feedback to users.
+The following error case diagram describes potential error scenarios and interactions in the Byju's Competitor application. These error cases represent situations where a user’s action or the system's behavior leads to an error. The system is designed to handle these errors and provide appropriate feedback to users.
 
 ## Actors
 
@@ -450,9 +450,9 @@ Admin --> (Database Connection Error)
 
 ---
 
-# Abuse Case Diagram for Byju's Clone
+# Abuse Case Diagram for Byju's Competitor
 
-The following abuse case diagram describes potential abusive scenarios and interactions within the Byju's Clone application. These abuse cases represent malicious or harmful behaviors from users that could affect the system's integrity, user experience, or platform safety. The system is designed to handle and prevent these abuse cases through preventive measures and reporting mechanisms.
+The following abuse case diagram describes potential abusive scenarios and interactions within the Byju's Competitor application. These abuse cases represent malicious or harmful behaviors from users that could affect the system's integrity, user experience, or platform safety. The system is designed to handle and prevent these abuse cases through preventive measures and reporting mechanisms.
 
 ## Actors
 

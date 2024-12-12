@@ -9,7 +9,7 @@
 
 
 **Core Logic:**
-- Shows the **high-level interaction** between users and the Byju's clone platform.
+- Shows the **high-level interaction** between users and the Byju's competitor platform.
 - Depicts **three primary users**: Students, Teachers, and Admins.
 - Includes **external systems** such as payment gateways, content providers, and notification services.
 - Focuses on the **data flow and communication** between users and the system.
@@ -30,7 +30,7 @@ alt="Container Diagram" width="900">
 - Depicts the **interaction between containers** using arrows.
 - The **frontend (web and mobile)** interacts with the backend API.
 - Backend integrates with the database and external services.
-- Provides a clear understanding of **modular interactions** within the Byju's clone system.
+- Provides a clear understanding of **modular interactions** within the Byju's competitor system.
 
 ---
 
